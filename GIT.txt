@@ -1,0 +1,69 @@
+GIT:
+->it is a version control system.It records the changes made by our code 
+our time in database called repository
+->we can look at our project history and can see who has made much changes
+when and why
+->and if we screw something,we can revert back to earlier state
+->without this we have constantly store our files and its copies whenevre
+any change is done.This is not scalable
+->specially wehn multiple people are working on same project  instead of
+sending their code through email or some other thing it will be drawback.
+so in a nutshell
+By using of version control system
+we can
+->track history
+->we can work together.
+->it takes snapshots if our code.
+->we can visit snapshots at any time.
+It is of 2 types
+1.centralised
+all team members connnect to 1 server to get latest copy of code
+ex:subversion,team foundation server
+disadv:if the server goes offline we cant retrive out project
+we have to wait until server comes online
+2.Distributed
+every team member has a own server so that we can store the code
+locally on our machine
+Ex:Git,mercurial.
+Git is the msot popular.
+bcz it is free,open source,super fast,scalable
+Using Git:
+1.using cmd line
+2.code editors and ides(Vs code etc)
+3.GUI(it has some limitations,and it is not always available)
+There are 3 
+1.system->all users
+2.global->all repositories of current user
+3.local->the current repository
+
+
+Some imp commands:
+
+->git config --global user.name "tilak314"   --->sets user name to that
+similarly for mailid also.
+git config --global -e
+->opens the file in which all our details are present in our default editor(vs code)
+code
+->opens vs code
+git config --global core.editor "code --wait"
+->tells the cmd prompt to wait until we close the new vs code instance.
+git config -h
+->gives the extra info about git config command.
+git init
+->initialise the git repo
+git add<file>
+->add files to index
+git add .
+->add all files
+git add *.html
+->adds all html files
+git status
+->check status of working tree
+git commit
+->commit changes in index
+git push
+->push to remote repo
+git pull
+->pull latest from remote repo
+git clone
+->copy repo into new directory
